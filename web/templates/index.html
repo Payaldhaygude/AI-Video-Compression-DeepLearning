@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Video Compression</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">AI Video Compression</div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>AI Video Compression System</h1>
+    <p>Upload a video and compress it using Deep Learning</p>
+</section>
+
+<section class="upload-section">
+    <div class="upload-card">
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" name="video" id="videoInput" accept="video/*" required>
+            <button type="submit">Upload & Compress</button>
+        </form>
+        <div id="responseBox"></div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 AI Video Compression Project</p>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

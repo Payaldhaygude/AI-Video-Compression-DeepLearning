@@ -1,0 +1,17 @@
+# Ignore videos and outputs
+uploads/
+outputs/
+data/frames/
+data/processed_frames/
+*.mp4
+*.avi
+*.zip
+
+# Ignore trained model weights only
+*.pt
+*.pth
+*.h5
+
+# Python
+__pycache__/
+*.pyc
